@@ -177,7 +177,7 @@
 			buildPhases = (
 			);
 			buildToolPath = make;
-			buildWorkingDirectory = /Users/jlochner/Devel/bradwii;
+			buildWorkingDirectory = "";
 			dependencies = (
 			);
 			name = "compile only";
