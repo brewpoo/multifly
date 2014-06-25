@@ -58,7 +58,9 @@ void init_outputs() {
 
     lib_digitalio_initpin(MOTOR_0_PIN, DIGITALOUTPUT);
     lib_digitalio_initpin(MOTOR_1_PIN, DIGITALOUTPUT);
+#if (NUM_MOTORS>2)
     lib_digitalio_initpin(MOTOR_2_PIN, DIGITALOUTPUT);
+#endif
 #if (NUM_MOTORS>3)
     lib_digitalio_initpin(MOTOR_3_PIN, DIGITALOUTPUT);
 #endif
@@ -108,7 +110,9 @@ void set_all_motor_outputs(int value) {
 
     set_output(MOTOR_0_CHANNEL,value);
     set_output(MOTOR_1_CHANNEL,value);
+#if (NUM_MOTORS>2)
     set_output(MOTOR_2_CHANNEL,value);
+#endif
 #if (NUM_MOTORS>3)
     set_output(MOTOR_3_CHANNEL,value);
 #endif
@@ -232,7 +236,9 @@ void write_motor_outputs() {
     
     set_output(MOTOR_0_CHANNEL,global.motor[0]);
     set_output(MOTOR_1_CHANNEL,global.motor[1]);
+#if (NUM_MOTORS>2)
     set_output(MOTOR_2_CHANNEL,global.motor[2]);
+#endif
 #if (NUM_MOTORS>3)
     set_output(MOTOR_3_CHANNEL,global.motor[3]);
 #endif
