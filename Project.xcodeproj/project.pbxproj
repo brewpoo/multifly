@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		B22E70EC1959D86300DAC67B /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
+		B238AEB4194B385B00B860E8 /* uncrashable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = uncrashable.cpp; sourceTree = SOURCE_ROOT; };
+		B238AEB5194B387100B860E8 /* uncrashable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uncrashable.h; sourceTree = SOURCE_ROOT; };
+		B238AEB6194B5B4F00B860E8 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B29C212D1951C13D0057BD23 /* autopilot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = autopilot.cpp; sourceTree = SOURCE_ROOT; };
+		B29C212E1951C1510057BD23 /* autopilot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autopilot.h; sourceTree = SOURCE_ROOT; };
+		B2CF62F61949EEB200992E65 /* eeprom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = eeprom.cpp; sourceTree = SOURCE_ROOT; };
+		B2CF62F71949EEB200992E65 /* multifly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multifly.h; sourceTree = SOURCE_ROOT; };
+		B2CF62F81949EEB200992E65 /* multifly.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = multifly.cpp; sourceTree = SOURCE_ROOT; };
+		B2CF62F91949EEB200992E65 /* vectors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vectors.h; sourceTree = SOURCE_ROOT; };
+		B2CF62FA1949EEB200992E65 /* vectors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vectors.cpp; sourceTree = SOURCE_ROOT; };
+		B2CF62FB1949EEB200992E65 /* serial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = serial.h; sourceTree = SOURCE_ROOT; };
+		B2CF62FC1949EEB200992E65 /* serial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = serial.cpp; sourceTree = SOURCE_ROOT; };
+		B2CF62FD1949EEB200992E65 /* rx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rx.h; sourceTree = SOURCE_ROOT; };
+		B2CF62FE1949EEB200992E65 /* rx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rx.cpp; sourceTree = SOURCE_ROOT; };
+		B2CF62FF1949EEB200992E65 /* projectsettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = projectsettings.h; sourceTree = SOURCE_ROOT; };
+		B2CF63001949EEB200992E65 /* pilotcontrol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pilotcontrol.h; sourceTree = SOURCE_ROOT; };
+		B2CF63011949EEB200992E65 /* pilotcontrol.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pilotcontrol.cpp; sourceTree = SOURCE_ROOT; };
+		B2CF63021949EEB200992E65 /* output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = output.h; sourceTree = SOURCE_ROOT; };
+		B2CF63031949EEB200992E65 /* output.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = output.cpp; sourceTree = SOURCE_ROOT; };
+		B2CF63041949EEB200992E65 /* options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = options.h; sourceTree = SOURCE_ROOT; };
+		B2CF63051949EEB200992E65 /* navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = navigation.h; sourceTree = SOURCE_ROOT; };
+		B2CF63061949EEB200992E65 /* navigation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = navigation.cpp; sourceTree = SOURCE_ROOT; };
+		B2CF63071949EEB200992E65 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = SOURCE_ROOT; usesTabs = 1; };
+		B2CF63081949EEB200992E65 /* imu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imu.h; sourceTree = SOURCE_ROOT; };
+		B2CF63091949EEB200992E65 /* imu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imu.cpp; sourceTree = SOURCE_ROOT; };
+		B2CF630A1949EEB200992E65 /* gyro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gyro.h; sourceTree = SOURCE_ROOT; };
+		B2CF630B1949EEB200992E65 /* gyro.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gyro.cpp; sourceTree = SOURCE_ROOT; };
+		B2CF630C1949EEB200992E65 /* gps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gps.h; sourceTree = SOURCE_ROOT; };
+		B2CF630D1949EEB200992E65 /* gps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gps.cpp; sourceTree = SOURCE_ROOT; };
+		B2CF630E1949EEB200992E65 /* eeprom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eeprom.h; sourceTree = SOURCE_ROOT; };
+		B2CF630F1949EEB200992E65 /* defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defs.h; sourceTree = SOURCE_ROOT; };
+		B2CF63101949EEB200992E65 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = SOURCE_ROOT; };
+		B2CF63111949EEB200992E65 /* compass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compass.h; sourceTree = SOURCE_ROOT; };
+		B2CF63121949EEB200992E65 /* compass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = compass.cpp; sourceTree = SOURCE_ROOT; };
+		B2CF63131949EEB200992E65 /* checkboxes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checkboxes.h; sourceTree = SOURCE_ROOT; };
+		B2CF63141949EEB200992E65 /* checkboxes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = checkboxes.cpp; sourceTree = SOURCE_ROOT; };
+		B2CF63151949EEB200992E65 /* baro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baro.h; sourceTree = SOURCE_ROOT; };
+		B2CF63161949EEB200992E65 /* baro.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = baro.cpp; sourceTree = SOURCE_ROOT; };
+		B2CF63171949EEB200992E65 /* autotune.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autotune.h; sourceTree = SOURCE_ROOT; };
+		B2CF63181949EEB200992E65 /* autotune.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = autotune.cpp; sourceTree = SOURCE_ROOT; };
+		B2CF63191949EEB200992E65 /* aircraft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aircraft.h; sourceTree = SOURCE_ROOT; };
+		B2CF631A1949EEB200992E65 /* aircraft.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aircraft.cpp; sourceTree = SOURCE_ROOT; };
+		B2CF631B1949EEB200992E65 /* accelerometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = accelerometer.h; sourceTree = SOURCE_ROOT; };
+		B2CF631C1949EEB200992E65 /* accelerometer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = accelerometer.cpp; sourceTree = SOURCE_ROOT; };
+		B2CF63491949F6F500992E65 /* lib_usb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lib_usb.h; sourceTree = "<group>"; };
+		B2CF634A1949F6F500992E65 /* lib_usb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lib_usb.cpp; sourceTree = "<group>"; };
+		B2CF634B1949F6F500992E65 /* lib_timers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lib_timers.h; sourceTree = "<group>"; };
+		B2CF634C1949F6F500992E65 /* lib_timers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lib_timers.cpp; sourceTree = "<group>"; };
+		B2CF634D1949F6F500992E65 /* lib_serial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lib_serial.h; sourceTree = "<group>"; };
+		B2CF634E1949F6F500992E65 /* lib_serial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lib_serial.cpp; sourceTree = "<group>"; };
+		B2CF634F1949F6F500992E65 /* lib_pwm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lib_pwm.h; sourceTree = "<group>"; };
+		B2CF63501949F6F500992E65 /* lib_pwm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lib_pwm.cpp; sourceTree = "<group>"; };
+		B2CF63511949F6F500992E65 /* lib_i2c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lib_i2c.h; sourceTree = "<group>"; };
+		B2CF63521949F6F500992E65 /* lib_i2c.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lib_i2c.cpp; sourceTree = "<group>"; };
+		B2CF63531949F6F500992E65 /* lib_fp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lib_fp.h; sourceTree = "<group>"; };
+		B2CF63541949F6F500992E65 /* lib_fp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lib_fp.cpp; sourceTree = "<group>"; };
+		B2CF63551949F6F500992E65 /* lib_digitalio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lib_digitalio.h; sourceTree = "<group>"; };
+		B2CF63561949F6F500992E65 /* lib_digitalio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lib_digitalio.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		4079523B0CEA382200E202DC = {
+			isa = PBXGroup;
+			children = (
+				B2CF632D1949F12500992E65 /* Libraries */,
+				A27328C014D9F0BB00E39B15 /* Source */,
+				B2CF6357194A1E2000992E65 /* User Editable Files */,
+				B2CF63071949EEB200992E65 /* Makefile */,
+				B238AEB6194B5B4F00B860E8 /* LICENSE */,
+				B22E70EC1959D86300DAC67B /* ReadMe.md */,
+			);
+			sourceTree = "<group>";
+		};
+		A27328C014D9F0BB00E39B15 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B238AEB3194A1FEB00B860E8 /* Internals */,
+				B2CF631C1949EEB200992E65 /* accelerometer.cpp */,
+				B2CF631B1949EEB200992E65 /* accelerometer.h */,
+				B2CF631A1949EEB200992E65 /* aircraft.cpp */,
+				B2CF63191949EEB200992E65 /* aircraft.h */,
+				B29C212D1951C13D0057BD23 /* autopilot.cpp */,
+				B29C212E1951C1510057BD23 /* autopilot.h */,
+				B2CF63181949EEB200992E65 /* autotune.cpp */,
+				B2CF63171949EEB200992E65 /* autotune.h */,
+				B238AEB4194B385B00B860E8 /* uncrashable.cpp */,
+				B238AEB5194B387100B860E8 /* uncrashable.h */,
+				B2CF63161949EEB200992E65 /* baro.cpp */,
+				B2CF63151949EEB200992E65 /* baro.h */,
+				B2CF62F81949EEB200992E65 /* multifly.cpp */,
+				B2CF62F71949EEB200992E65 /* multifly.h */,
+				B2CF63141949EEB200992E65 /* checkboxes.cpp */,
+				B2CF63131949EEB200992E65 /* checkboxes.h */,
+				B2CF63121949EEB200992E65 /* compass.cpp */,
+				B2CF63111949EEB200992E65 /* compass.h */,
+				B2CF62F61949EEB200992E65 /* eeprom.cpp */,
+				B2CF630E1949EEB200992E65 /* eeprom.h */,
+				B2CF630D1949EEB200992E65 /* gps.cpp */,
+				B2CF630C1949EEB200992E65 /* gps.h */,
+				B2CF630B1949EEB200992E65 /* gyro.cpp */,
+				B2CF630A1949EEB200992E65 /* gyro.h */,
+				B2CF63091949EEB200992E65 /* imu.cpp */,
+				B2CF63081949EEB200992E65 /* imu.h */,
+				B2CF63061949EEB200992E65 /* navigation.cpp */,
+				B2CF63051949EEB200992E65 /* navigation.h */,
+				B2CF63031949EEB200992E65 /* output.cpp */,
+				B2CF63021949EEB200992E65 /* output.h */,
+				B2CF63011949EEB200992E65 /* pilotcontrol.cpp */,
+				B2CF63001949EEB200992E65 /* pilotcontrol.h */,
+				B2CF62FE1949EEB200992E65 /* rx.cpp */,
+				B2CF62FD1949EEB200992E65 /* rx.h */,
+				B2CF62FC1949EEB200992E65 /* serial.cpp */,
+				B2CF62FB1949EEB200992E65 /* serial.h */,
+				B2CF62FA1949EEB200992E65 /* vectors.cpp */,
+				B2CF62F91949EEB200992E65 /* vectors.h */,
+			);
+			name = Source;
+			path = "project files";
+			sourceTree = "<group>";
+		};
+		B238AEB3194A1FEB00B860E8 /* Internals */ = {
+			isa = PBXGroup;
+			children = (
+				B2CF630F1949EEB200992E65 /* defs.h */,
+				B2CF63041949EEB200992E65 /* options.h */,
+			);
+			name = Internals;
+			sourceTree = "<group>";
+		};
+		B2CF632D1949F12500992E65 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				B2CF63491949F6F500992E65 /* lib_usb.h */,
+				B2CF634A1949F6F500992E65 /* lib_usb.cpp */,
+				B2CF634B1949F6F500992E65 /* lib_timers.h */,
+				B2CF634C1949F6F500992E65 /* lib_timers.cpp */,
+				B2CF634D1949F6F500992E65 /* lib_serial.h */,
+				B2CF634E1949F6F500992E65 /* lib_serial.cpp */,
+				B2CF634F1949F6F500992E65 /* lib_pwm.h */,
+				B2CF63501949F6F500992E65 /* lib_pwm.cpp */,
+				B2CF63511949F6F500992E65 /* lib_i2c.h */,
+				B2CF63521949F6F500992E65 /* lib_i2c.cpp */,
+				B2CF63531949F6F500992E65 /* lib_fp.h */,
+				B2CF63541949F6F500992E65 /* lib_fp.cpp */,
+				B2CF63551949F6F500992E65 /* lib_digitalio.h */,
+				B2CF63561949F6F500992E65 /* lib_digitalio.cpp */,
+				B2CF62FF1949EEB200992E65 /* projectsettings.h */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		B2CF6357194A1E2000992E65 /* User Editable Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2CF63101949EEB200992E65 /* config.h */,
+			);
+			name = "User Editable Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		407952600CEA391500E202DC /* compile only */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "";
+			buildConfigurationList = 407952610CEA393300E202DC /* Build configuration list for PBXLegacyTarget "compile only" */;
+			buildPhases = (
+			);
+			buildToolPath = make;
+			buildWorkingDirectory = /Users/jlochner/Devel/bradwii;
+			dependencies = (
+			);
+			name = "compile only";
+			passBuildSettingsInEnvironment = 1;
+			productName = "Build All";
+		};
+		A27F037017B99087008046B7 /* compile and flash 328p Flip */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = install;
+			buildConfigurationList = A27F037117B99087008046B7 /* Build configuration list for PBXLegacyTarget "compile and flash 328p Flip" */;
+			buildPhases = (
+			);
+			buildToolPath = make;
+			buildWorkingDirectory = "project files";
+			dependencies = (
+			);
+			name = "compile and flash 328p Flip";
+			passBuildSettingsInEnvironment = 1;
+			productName = "Build All";
+		};
+		A2851D78175EB4B700A602D7 /* compile and flash 328p ext. */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = install;
+			buildConfigurationList = A2851D79175EB4B700A602D7 /* Build configuration list for PBXLegacyTarget "compile and flash 328p ext." */;
+			buildPhases = (
+			);
+			buildToolPath = make;
+			buildWorkingDirectory = "project files";
+			dependencies = (
+			);
+			name = "compile and flash 328p ext.";
+			passBuildSettingsInEnvironment = 1;
+			productName = "Build All";
+		};
+		A2A8B4CA14D8D32C00FBBCCD /* compile and flash 2560 */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = install;
+			buildConfigurationList = A2A8B4CB14D8D32C00FBBCCD /* Build configuration list for PBXLegacyTarget "compile and flash 2560" */;
+			buildPhases = (
+			);
+			buildToolPath = make;
+			buildWorkingDirectory = /Users/jlochner/Devel/bradwii;
+			dependencies = (
+			);
+			name = "compile and flash 2560";
+			passBuildSettingsInEnvironment = 1;
+			productName = "Build All";
+		};
+		A2D5C1F417079CBD00130BA2 /* compile and flash 328p */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = install;
+			buildConfigurationList = A2D5C1F517079CBD00130BA2 /* Build configuration list for PBXLegacyTarget "compile and flash 328p" */;
+			buildPhases = (
+			);
+			buildToolPath = make;
+			buildWorkingDirectory = "project files";
+			dependencies = (
+			);
+			name = "compile and flash 328p";
+			passBuildSettingsInEnvironment = 1;
+			productName = "Build All";
+		};
+		A2D5C78E171B1EDB000E4300 /* compile and flash 32u4 */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = install;
+			buildConfigurationList = A2D5C78F171B1EDB000E4300 /* Build configuration list for PBXLegacyTarget "compile and flash 32u4" */;
+			buildPhases = (
+			);
+			buildToolPath = make;
+			buildWorkingDirectory = "project files";
+			dependencies = (
+			);
+			name = "compile and flash 32u4";
+			passBuildSettingsInEnvironment = 1;
+			productName = "Build All";
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		4079523D0CEA382200E202DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = 4079523E0CEA382200E202DC /* Build configuration list for PBXProject "Project" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4079523B0CEA382200E202DC;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				407952600CEA391500E202DC /* compile only */,
+				A2A8B4CA14D8D32C00FBBCCD /* compile and flash 2560 */,
+				A2D5C1F417079CBD00130BA2 /* compile and flash 328p */,
+				A2D5C78E171B1EDB000E4300 /* compile and flash 32u4 */,
+				A2851D78175EB4B700A602D7 /* compile and flash 328p ext. */,
+				A27F037017B99087008046B7 /* compile and flash 328p Flip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		407952400CEA382200E202DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+		407952630CEA393300E202DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVICE = atmega2560;
+				PATH = "$(PATH):$(PROJECT_DIR)/../Avr_Tools/bin:$(PROJECT_DIR)'/../Avr Libraries':$(PROJECT_DIR):/Applications/Copter/Arduino.app/Contents/Resources/Java/hardware/tools/avr/bin/";
+			};
+			name = Release;
+		};
+		A27F037217B99087008046B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVICE = atmega328p;
+				PATH = "$(PATH):$(PROJECT_DIR)/../Avr_Tools/bin";
+				PRODUCT_NAME = "compile and flash 328p copy";
+				PROGRAMMER = "-carduino -P/dev/cu.SLAB_USBtoUART -b57600 -D";
+			};
+			name = Release;
+		};
+		A2851D7A175EB4B700A602D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVICE = atmega328p;
+				PATH = "$(PATH):$(PROJECT_DIR)/../Avr_Tools/bin";
+				PRODUCT_NAME = "compile and flash 328p2";
+				PROGRAMMER = "-c  arduino -P/dev/cu.usbserial-A602UR5L -b57600 -D";
+			};
+			name = Release;
+		};
+		A2A8B4CC14D8D32C00FBBCCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVICE = atmega2560;
+				PATH = "$(PATH):$(PROJECT_DIR)/../Avr_Tools/bin:$(PROJECT_DIR)'/../Avr Libraries':$(PROJECT_DIR):/Applications/Copter/Arduino.app/Contents/Resources/Java/hardware/tools/avr/bin/";
+				PROGRAMMER = "-c wiring -P/dev/cu.SLAB_USBtoUART -b115200 -D";
+			};
+			name = Release;
+		};
+		A2D5C1F617079CBD00130BA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVICE = atmega328p;
+				PATH = "$(PATH):$(PROJECT_DIR)/../Avr_Tools/bin";
+				PROGRAMMER = "-c  arduino -P/dev/cu.usbserial-A601UWAV -b57600 -D";
+			};
+			name = Release;
+		};
+		A2D5C790171B1EDB000E4300 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVICE = atmega32u4;
+				PATH = "$(PATH):$(PROJECT_DIR)/../Avr_Tools/bin";
+				PROGRAMMER = "-cavr109 -P/dev/cu.usbmodem1421 -b57600 -D";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4079523E0CEA382200E202DC /* Build configuration list for PBXProject "Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				407952400CEA382200E202DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		407952610CEA393300E202DC /* Build configuration list for PBXLegacyTarget "compile only" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				407952630CEA393300E202DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A27F037117B99087008046B7 /* Build configuration list for PBXLegacyTarget "compile and flash 328p Flip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A27F037217B99087008046B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2851D79175EB4B700A602D7 /* Build configuration list for PBXLegacyTarget "compile and flash 328p ext." */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2851D7A175EB4B700A602D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2A8B4CB14D8D32C00FBBCCD /* Build configuration list for PBXLegacyTarget "compile and flash 2560" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2A8B4CC14D8D32C00FBBCCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2D5C1F517079CBD00130BA2 /* Build configuration list for PBXLegacyTarget "compile and flash 328p" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2D5C1F617079CBD00130BA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2D5C78F171B1EDB000E4300 /* Build configuration list for PBXLegacyTarget "compile and flash 32u4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2D5C790171B1EDB000E4300 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4079523D0CEA382200E202DC /* Project object */;
+}
