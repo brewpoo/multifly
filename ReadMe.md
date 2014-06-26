@@ -4,8 +4,7 @@
 
 Multifly is an open source software alternative for MultiWii-compatible flight controllers.  This software is based on [BradWii](https://github.com/bradquick/bradwii) which is a complete rewrite/rework of the official MultiWii codebase written by Brad Quick.  Here are Brad's comments regarding his hardwork on the BradWii project:
 
->> BradWii is open source multi-copter software.  The name BradWii comes from the fact that many concepts and some code >> were borrowed from Multi-Wii.  It's also a play on the original developer's name, Bradley (Call me Brad).  Though 
->> based on Multi-Wii, BradWii is pretty much a complete re-write.  BradWii is intended to be a platform on which other >> projects can be built.
+>> BradWii is open source multi-copter software.  The name BradWii comes from the fact that many concepts and some code were borrowed from Multi-Wii.  It's also a play on the original developer's name, Bradley (Call me Brad).  Though based on Multi-Wii, BradWii is pretty much a complete re-write.  BradWii is intended to be a platform on which other projects can be built.
 
 ## Goals
 The primary goals of the Multifly software are:
