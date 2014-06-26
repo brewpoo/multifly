@@ -13,7 +13,6 @@ int tests_run = 0;
 static char * test_fp_math() {
     fixedpointnum num1 = (10L<<FIXEDPOINTSHIFT);
     fixedpointnum num2 = (50L<<FIXEDPOINTSHIFT);
-
     fixedpointnum product = lib_fp_multiply(num1,num2);
     printf("%ld * %ld = %ld\n", num1>>FIXEDPOINTSHIFT, num2>>FIXEDPOINTSHIFT, product>>FIXEDPOINTSHIFT);
     mu_assert("error, product != 500", product == (500L<<FIXEDPOINTSHIFT));
@@ -27,6 +26,12 @@ static char * test_fp_math() {
     fixedpointnum product2 = lib_fp_multiply(frac1,frac2);
     printf("%ld * %ld = %ld\n", frac1, frac2, product2);
     mu_assert("error, product != 2", product2 == FIXEDPOINTCONSTANT(2.25));
+    
+    num1 = (10L<<FIXEDPOINTSHIFT);
+    num2 = -FIXEDPOINTONE;
+    fixedpointnum product3 = lib_fp_multiply(num1,num2);
+    printf("%ld * %ld = %ld\n", num1>>FIXEDPOINTSHIFT, num2>>FIXEDPOINTSHIFT, product3>>FIXEDPOINTSHIFT);
+    mu_assert("error, product != -10", product3 == (-10L<<FIXEDPOINTSHIFT));
     return 0;
 }
 
