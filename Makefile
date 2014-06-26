@@ -28,6 +28,7 @@ OBJECTS    = multifly.o lib_usb.o rx.o serial.o output.o gyro.o accelerometer.o 
 AVRDUDE = avrdude -v $(PROGRAMMER) -p $(DEVICE) 
 LIBRARYPATH = './'
 COMPILE = avr-gcc -Wall -Os -DF_CPU=$(CLOCK) -mmcu=$(DEVICE) -I "$(PROJECT_DIR)" -I $(LIBRARYPATH)
+GCC = g++
 
 # install: is called for the make and burn target
 # symbolic targets:
@@ -118,3 +119,11 @@ disasm:	multifly.elf
 
 cpp:
 	$(COMPILE) -E multifly.c
+	
+test:
+	$(GCC) -DFPPROCESSORDOESNTSUPPORTMULSU -c lib_fp.cpp -o lib_fp.o
+	$(GCC) -Wdeprecated-writable-strings -c test.cpp -o test.o
+	$(GCC) -o test.out -Wl,test.o,lib_fp.o
+	./test.out
+	
+
