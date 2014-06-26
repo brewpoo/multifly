@@ -4,9 +4,8 @@
 
 Multifly is an open source software alternative for MultiWii-compatible flight controllers.  This software is based on [BradWii](https://github.com/bradquick/bradwii) which is a complete rewrite/rework of the official MultiWii codebase written by Brad Quick.  Here are Brad's comments regarding his hardwork on the BradWii project:
 
-```
-BradWii is open source multi-copter software.  The name BradWii comes from the fact that many concepts and some code were borrowed from Multi-Wii.  It's also a play on the original developer's name, Bradley (Call me Brad).  Though based on Multi-Wii, BradWii is pretty much a complete re-write.  BradWii is intended to be a platform on which other projects can be built.
-```
+>> BradWii is open source multi-copter software.  The name BradWii comes from the fact that many concepts and some code >> were borrowed from Multi-Wii.  It's also a play on the original developer's name, Bradley (Call me Brad).  Though 
+>> based on Multi-Wii, BradWii is pretty much a complete re-write.  BradWii is intended to be a platform on which other >> projects can be built.
 
 ## Goals
 The primary goals of the Multifly software are:
@@ -16,35 +15,33 @@ The primary goals of the Multifly software are:
 - Straight forward code base that is understandable and modular
 
 - MultiWii Protocol (MWP) compatible, supporting serial and bluetooth
-  - MultiWii Config Tool
-  - Android/iPhone apps
-  - MinimOSD w/KV Team OSD Firmware)
+	- MultiWii Config Tool
+ 	- Android/iPhone apps
+ 	- MinimOSD w/KV Team OSD Firmware)
   
 - Pin compatible with each MultiWii supported board
-  - Try Multifly without having to rewire anything
+	- Try Multifly without having to rewire anything
   
 - Control what features make it into the code on your board
-  - Easy to opt out of software features (minimize footprint)
+	- Easy to opt out of software features (minimize footprint)
 
 ##Features
 
 - Currently supports the following aircraft configurations:
-  - Quad X
-  - Tricopter
-  
-  - Will be adding more configurations soon
+	- Quad X
+	- Tricopter
+  	- Will be adding more configurations soon
   
 - Currently works with the following Hobby King boards:
 	- Multi-Wii Pro 2.0
-	- Multi-Wii 328p 
-	- Multi-Wii NanoWii 
-
-  - Will be adding more boards soon
+	- Multi-Wii 328p
+	- Multi-Wii NanoWii
+	- Will be adding more boards soon
 
 - Extensive use of fixed point math means the code is faster and more accurate 
-  - Each value has 32 bit precision and the loop times are frequently under 2 milliseconds
-  - All integration and filtering is time based, which means that constant loop times aren't critical
-  - The result is stable flight
+	- Each value has 32 bit precision and the loop times are frequently under 2 milliseconds
+	- All integration and filtering is time based, which means that constant loop times aren't critical
+	- The result is stable flight
 
 - Three pilot flight control modes
   - Full Acro (Acro)
