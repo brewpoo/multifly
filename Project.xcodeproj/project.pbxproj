@@ -8,6 +8,9 @@
 
 /* Begin PBXFileReference section */
 		B22E70EC1959D86300DAC67B /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
+		B22E7155195B17D700DAC67B /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		B22E7157195B20CE00DAC67B /* test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
+		B22E7192195B25DE00DAC67B /* minunit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = minunit.h; sourceTree = "<group>"; };
 		B238AEB4194B385B00B860E8 /* uncrashable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = uncrashable.cpp; sourceTree = SOURCE_ROOT; };
 		B238AEB5194B387100B860E8 /* uncrashable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uncrashable.h; sourceTree = SOURCE_ROOT; };
 		B238AEB6194B5B4F00B860E8 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -72,12 +75,15 @@
 		4079523B0CEA382200E202DC = {
 			isa = PBXGroup;
 			children = (
+				B22E7156195B209000DAC67B /* Test */,
 				B2CF632D1949F12500992E65 /* Libraries */,
 				A27328C014D9F0BB00E39B15 /* Source */,
 				B2CF6357194A1E2000992E65 /* User Editable Files */,
 				B2CF63071949EEB200992E65 /* Makefile */,
 				B238AEB6194B5B4F00B860E8 /* LICENSE */,
 				B22E70EC1959D86300DAC67B /* ReadMe.md */,
+				B22E7155195B17D700DAC67B /* TODO */,
+				B22E715D195B215700DAC67B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +132,22 @@
 			);
 			name = Source;
 			path = "project files";
+			sourceTree = "<group>";
+		};
+		B22E7156195B209000DAC67B /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				B22E7157195B20CE00DAC67B /* test.cpp */,
+				B22E7192195B25DE00DAC67B /* minunit.h */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
+		B22E715D195B215700DAC67B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		B238AEB3194A1FEB00B860E8 /* Internals */ = {
@@ -268,8 +290,10 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 4079523B0CEA382200E202DC;
+			productRefGroup = B22E715D195B215700DAC67B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

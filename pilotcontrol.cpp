@@ -26,6 +26,7 @@ extern settingsstruct settings;
 // convert maximum tilt angles for level mode into fixed point
 #define FP_LEVEL_MODE_MAX_TILT FIXEDPOINTCONSTANT(LEVEL_MODE_MAX_TILT)
 #define FP_LEVEL_MODE_MAX_TILT_HIGH_ANGLE FIXEDPOINTCONSTANT(LEVEL_MODE_MAX_TILT_HIGH_ANGLE)
+
 // convert high rate multiplier into fixed point
 #define FP_HIGH_RATES_MULTIPLIER FIXEDPOINTCONSTANT(HIGH_RATES_MULTIPLIER)
 
@@ -149,7 +150,6 @@ void get_angle_error_from_pilot_input(fixedpointnum *angleError) {
         } else {
             if (rxPitchValue>maxStickThrow) maxStickThrow=rxPitchValue;
         }
-        
    
         // if the aircraft is tipped more than 90 degrees, use full acro mode so we don't run into
         // euler issues when inverted.  This also allows us to pause while up-side-down if we want to.
