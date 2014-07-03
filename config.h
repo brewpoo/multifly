@@ -75,12 +75,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 //#define MULTIWII_CONFIG_SERIAL_PORTS NOSERIALPORT
 //#define MULTIWII_CONFIG_SERIAL_PORTS SERIALPORT1
-#define MULTIWII_CONFIG_SERIAL_PORTS SERIALPORT1+SERIALPORT3
+#define MULTIWII_CONFIG_SERIAL_PORTS SERIALPORT0+SERIALPORT1+SERIALPORT3
 
-//#define SERIAL_0_BAUD 115200
-//#define SERIAL_1_BAUD 9600
-//#define SERIAL_2_BAUD 9600
-//#define SERIAL_3_BAUD 115200
+#define SERIAL_0_BAUD 115200
+#define SERIAL_1_BAUD 115200
+#define SERIAL_2_BAUD 115200
+#define SERIAL_3_BAUD 115200
 
 // Choose whether to include code for a GPS and set parameters for the GPS, otherwise it will default o what the control board come with
 //#define GPS_TYPE NO_GPS // select if no GPS is going to be used
@@ -112,8 +112,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define MOTORS_STOP YES
 
 // set the minimum motor output when armed. If not set, 1067 will be used as a default
-#define ARMED_MIN_MOTOR_OUTPUT 1067 // motors spin slowly when armed
+//#define ARMED_MIN_MOTOR_OUTPUT 1067 // motors spin slowly when armed
 //#define ARMED_MIN_MOTOR_OUTPUT 1170 // motors spin slowly when armed (for blheli flashed q-brain)
+#define ARMED_MIN_MOTOR_OUTPUT 1150 // motors spin slowly when armed (HK Blue Series)
 
 // Optionally set an offset from RX Input to ESC output.  Usually used to make sure
 // the throttle can go to zero.
