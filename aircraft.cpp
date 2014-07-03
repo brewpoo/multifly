@@ -46,7 +46,12 @@ void compute_mix(fixedpointnum throttle, fixedpointnum pid[]) {
     global.motor[TRI_LEFT_MOTOR] = MOTOR_MIX(+1, -2/3, 0);
     global.motor[TRI_RIGHT_MOTOR]= MOTOR_MIX(-1, -2/3, 0);
     global.servo[TRI_REAR_SERVO] = lib_fp_multiply(SERVO_DIR(TRI_REAR_SERVO),pid[YAW_INDEX])+SERVO_MID(TRI_REAR_SERVO);
-#elif (AIRCRAFT_CONFIGURATION==BI)    
+    global.debugValue[0]=global.motor[TRI_REAR_MOTOR];
+    global.debugValue[1]=global.motor[TRI_LEFT_MOTOR];
+    global.debugValue[2]=global.motor[TRI_RIGHT_MOTOR];
+    global.debugValue[3]=global.motor[TRI_REAR_SERVO];
+    global.debugValue[0]=global.motor[TRI_REAR_MOTOR];
+#elif (AIRCRAFT_CONFIGURATION==BI)
     global.motor[BI_LEFT_MOTOR] = MOTOR_MIX(+1, 0, 0);
     global.motor[BI_RIGHT_MOTOR]= MOTOR_MIX(-1, 0, 0);
     global.servo[BI_LEFT_SERVO] = lib_fp_multiply(SERVO_DIR(BI_LEFT_SERVO),pid[YAW_INDEX])-lib_fp_multiply(SERVO_DIR(BI_LEFT_SERVO),pid[PITCH_INDEX])+SERVO_MID(BI_LEFT_SERVO);
