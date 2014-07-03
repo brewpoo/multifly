@@ -6,7 +6,7 @@
 
 #include <stdio.h>
 #include "minunit.h"
-#include "lib_fp.h"
+#include "../lib_fp.h"
 
 int tests_run = 0;
 

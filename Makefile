@@ -122,7 +122,7 @@ cpp:
 	
 test:
 	$(GCC) -DFPPROCESSORDOESNTSUPPORTMULSU -c lib_fp.cpp -o lib_fp.o
-	$(GCC) -Wdeprecated-writable-strings -c test.cpp -o test.o
+	$(GCC) -Wdeprecated-writable-strings -c testing/test.cpp -o test.o
 	$(GCC) -o test.out -Wl,test.o,lib_fp.o
 	./test.out
 	

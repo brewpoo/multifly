@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		B2023F5A1965850100F3A472 /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = test.cpp; path = test/test.cpp; sourceTree = "<group>"; };
+		B2023F5B1965850100F3A472 /* minunit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = minunit.h; path = test/minunit.h; sourceTree = "<group>"; };
+		B2023F5C1965869500F3A472 /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = test.cpp; path = testing/test.cpp; sourceTree = "<group>"; };
+		B2023F5D1965869500F3A472 /* minunit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = minunit.h; path = testing/minunit.h; sourceTree = "<group>"; };
 		B22E70EC1959D86300DAC67B /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 		B22E7155195B17D700DAC67B /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		B22E7157195B20CE00DAC67B /* test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
@@ -139,6 +143,10 @@
 			children = (
 				B22E7157195B20CE00DAC67B /* test.cpp */,
 				B22E7192195B25DE00DAC67B /* minunit.h */,
+				B2023F5A1965850100F3A472 /* test.cpp */,
+				B2023F5B1965850100F3A472 /* minunit.h */,
+				B2023F5C1965869500F3A472 /* test.cpp */,
+				B2023F5D1965869500F3A472 /* minunit.h */,
 			);
 			name = Test;
 			sourceTree = "<group>";
