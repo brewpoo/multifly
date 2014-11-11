@@ -100,11 +100,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define NAVIGATION_MAX_TILT 8 //15 degrees
 
 // Choose output ranges (in microseconds)
-#define MIN_MOTOR_OUTPUT 1000
+//#define MIN_MOTOR_OUTPUT 1000
+#define MIN_MOTOR_OUTPUT 900
 #define MAX_MOTOR_OUTPUT 2000
 
 // un-comment if you don't want to include autotune code
-//#define NO_FAILSAFE
+#define NO_FAILSAFE
 #define FAILSAFE_MOTOR_OUTPUT 1200 // throttle setting for bringing the aircraft down at a safe speed
 
 // Un-comment and set to YES or NO to override the default value.
@@ -151,7 +152,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define ESC_CALIB_HIGH MAX_MOTOR_OUTPUT
 
 // un-comment if you don't want to include autotune code
-//#define NO_AUTOTUNE
+#define NO_AUTOTUNE
 
 // To adjust how agressive the tuning is, adjust the AUTOTUNEMAXOSCILLATION value.  A larger
 // value will result in more agressive tuning. A lower value will result in softer tuning.
@@ -172,7 +173,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define GYRO_LOW_PASS_FILTER 2
 
 // un-comment if you don't want to include uncrashable code
-//#define NO_UNCRASHABLE
+#define NO_UNCRASHABLE
 #define UNCRAHSABLE_MAX_ALTITUDE_OFFSET 30.0 // 30 meters above where uncrashability was enabled
 #define UNCRAHSABLE_RADIUS 50.0 // 50 meter radius
 
@@ -188,7 +189,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // altitude when banked. Adjust to suit.
 
 // un-comment if you don't want to include the autothrottle code
-//#define NO_AUTOTHROTTLE
+#define NO_AUTOTHROTTLE
 #define AUTOTHROTTLE_DEAD_AREA FIXEDPOINTCONSTANT(.25)
 
 // Uncomment the following line if you want to modify gain scheduling.  Gain scheduling adjusts the PID gains
