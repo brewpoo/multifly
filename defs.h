@@ -277,7 +277,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
    #define D6_PIN  (DIGITALPORTH | 3) // Pin 15 - PH3/OC4A
    #define D5_PIN  (DIGITALPORTE | 3) // Pin 5  - PE3/OC3A
    #define D3_PIN  (DIGITALPORTE | 5) // Pin 7  - PE5/OC3C
-   #define D2_PIN  (DIGITALPORTE | 4) // Pin 6  - PE3/OC3B
+   #define D2_PIN  (DIGITALPORTE | 4) // Pin 6  - PE4/OC3B
    #define D44_PIN (DIGITALPORTL | 5) // Pin 40 - PL5/OC5C
    #define D45_PIN (DIGITALPORTL | 4) // Pin 39 - PL4/OC5B
    #define D46_PIN (DIGITALPORTL | 3) // Pin 38 - PL3/OC5A

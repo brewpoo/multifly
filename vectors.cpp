@@ -29,7 +29,7 @@ void vector_cross_product(fixedpointnum *v1, fixedpointnum *v2, fixedpointnum *v
 fixedpointnum normalize_vector(fixedpointnum *v) {
     fixedpointnum vectorlengthsquared=lib_fp_multiply(v[0],v[0])+lib_fp_multiply(v[1],v[1])+lib_fp_multiply(v[2],v[2]);
    
-    // if we are near zero lenght, choose any unit length vector
+    // if we are near zero length, choose any unit length vector
     if (vectorlengthsquared<10) {
         v[0]=FIXEDPOINTONE;
         v[1]=v[2]=0;

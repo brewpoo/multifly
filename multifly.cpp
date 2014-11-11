@@ -210,7 +210,8 @@ int main(void) {
        unsigned char gotNewGpsReading=read_gps();
 
        // if we are navigating, use navigation to determine our desired attitude (tilt angles)
-       if (global.state.navigationMode!=NAVIGATION_MODE_OFF) { // we are navigating
+       if (global.state.navigationMode!=NAVIGATION_MODE_OFF) {
+           // we are navigating
            navigation_set_angle_error(gotNewGpsReading,angleError);
        }
 #endif
