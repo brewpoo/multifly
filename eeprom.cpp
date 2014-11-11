@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 extern settingsstruct settings;
 extern globalstruct global;
 
-#define MAGICNUMBER 12345
+#define MAGICNUMBER 54321
 
 void write_user_settings_to_eeprom() {
     int magicnumber=MAGICNUMBER;
