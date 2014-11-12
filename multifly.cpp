@@ -92,6 +92,9 @@ m
 #include "autotune.h"
 #include "autopilot.h"
 
+#define DEBUG
+#include "debug.h"
+
 globalstruct global; // global variables
 settingsstruct settings; // user editable variables
 
@@ -104,6 +107,9 @@ unsigned long timeslivertimer=0;
 
 // It all starts here:
 int main(void) {
+    DEBUG_INIT(9600);
+    DEBUG_PRINT("Starting Up...");
+    
     // start with default user settings in case there's nothing in eeprom
     default_user_settings();
     // try to load settings from eeprom

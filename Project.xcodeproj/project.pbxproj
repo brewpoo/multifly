@@ -73,6 +73,7 @@
 		B2CF63541949F6F500992E65 /* lib_fp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lib_fp.cpp; sourceTree = "<group>"; };
 		B2CF63551949F6F500992E65 /* lib_digitalio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lib_digitalio.h; sourceTree = "<group>"; };
 		B2CF63561949F6F500992E65 /* lib_digitalio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lib_digitalio.cpp; sourceTree = "<group>"; };
+		B2E8F1971A12E34800F7570E /* debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -107,6 +108,7 @@
 				B238AEB5194B387100B860E8 /* uncrashable.h */,
 				B2CF63161949EEB200992E65 /* baro.cpp */,
 				B2CF63151949EEB200992E65 /* baro.h */,
+				B2E8F1971A12E34800F7570E /* debug.h */,
 				B2CF62F81949EEB200992E65 /* multifly.cpp */,
 				B2CF62F71949EEB200992E65 /* multifly.h */,
 				B2CF63141949EEB200992E65 /* checkboxes.cpp */,

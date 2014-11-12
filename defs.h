@@ -37,7 +37,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
       #define BAROMETER_TYPE BMP085 // baro
    #endif
    #ifndef MULTIWII_CONFIG_SERIAL_PORTS
-      #define MULTIWII_CONFIG_SERIAL_PORTS SERIALPORT0+SERIALPORT3
+      #define MULTIWII_CONFIG_SERIAL_PORTS SERIALPORT0+SERIALPORT3+SERIALPORTUSB
    #endif
    #ifndef GPS_TYPE
       #define GPS_TYPE SERIAL_GPS

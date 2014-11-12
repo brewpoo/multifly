@@ -232,7 +232,7 @@ void lib_serial_sendchar(unsigned char serialportnumber,unsigned char c)
 //   sei();
    }
    
-void lib_serial_sendstring(unsigned char serialportnumber,char *string)
+void lib_serial_sendstring(unsigned char serialportnumber,const char *string)
    { // adds the string to the output buffer.
    while (*string) lib_serial_sendchar(serialportnumber,*string++);
    }
