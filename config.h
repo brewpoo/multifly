@@ -43,7 +43,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define RX_DSM2_SERIAL_PORT 1
 
 // Choose a channel order if you don't like the default for your receiver type selected above
-//#define RX_CHANNEL_ORDER         THROTTLE_INDEX,ROLL_INDEX,PITCH_INDEX,YAW_INDEX,AUX1_INDEX,AUX2_INDEX,AUX3_INDEX,AUX4_INDEX,8,9,10,11 //For Graupner/Spektrum
+#define RX_CHANNEL_ORDER         THROTTLE_INDEX,ROLL_INDEX,PITCH_INDEX,YAW_INDEX,AUX1_INDEX,AUX2_INDEX,AUX3_INDEX,AUX4_INDEX,8,9,10,11 //For Graupner/Spektrum
 //#define RX_CHANNEL_ORDER         ROLL_INDEX,PITCH_INDEX,THROTTLE_INDEX,YAW_INDEX,AUX1_INDEX,AUX2_INDEX,AUX3_INDEX,AUX4_INDEX,8,9,10,11 //For Robe/Hitec/Futaba
 //#define RX_CHANNEL_ORDER         ROLL_INDEX,PITCH_INDEX,YAW_INDEX,THROTTLE_INDEX,AUX1_INDEX,AUX2_INDEX,AUX3_INDEX,AUX4_INDEX,8,9,10,11 //For Multiplex
 //#define RX_CHANNEL_ORDER         PITCH_INDEX,ROLL_INDEX,THROTTLE_INDEX,YAW_INDEX,AUX1_INDEX,AUX2_INDEX,AUX3_INDEX,AUX4_INDEX,8,9,10,11 //For some Hitec/Sanwa/Others
@@ -66,7 +66,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // Choose an aircraft configuration (defaults to QUADX)
 //#define AIRCRAFT_CONFIGURATION QUADX
-#define AIRCRAFT_CONFIGURATION TRI
+#define AIRCRAFT_CONFIGURATION QUADX
 
 // Choose which serial ports will be used to transfer data to a configuration device.
 // Multiple serial channels can be configured. (i.e. one for computer, one for bluetooth).
@@ -96,7 +96,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define LEVEL_MODE_MAX_TILT 55 // 55 degrees
 #define LEVEL_MODE_MAX_TILT_HIGH_ANGLE 80 // 80 degrees when high angle checkbox active
 
-// Choose maximum tilt angles owhile navigating. This will determine how fast it moves from point to point.
+// Choose maximum tilt angles while navigating. This will determine how fast it moves from point to point.
 #define NAVIGATION_MAX_TILT 8 //15 degrees
 
 // Choose output ranges (in microseconds)
